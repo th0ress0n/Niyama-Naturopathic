@@ -19,14 +19,26 @@ const styles = StyleSheet.create({
   },
 });
 
+
+
 const Home = (props) => {
   return (
+    // const { navigate } = this.props.navigation;
     <View style={styles.container}>
       <Text style={styles.main}>
         Home
       </Text>
+      {/* <Button onPress={() => goBack()} title="Go back from this HomeScreen" /> */}
+      {/* <Button
+          title="Go to Details"
+          onPress={() => this.props.navigation.navigate('Profile')}
+        /> */}
     </View>
   );
+};
+
+Home.propTypes = {
+    // navigation: React.PropTypes.object,
 };
 
 export default Home;
